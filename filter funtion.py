@@ -1,11 +1,10 @@
 # sorry Jyputer in my labtop dosn't work, I just use python file to do that.
-from asyncio.windows_events import NULL
+import imp
 from logging import NullHandler
 from pickle import NONE
 import re
 import csv
 import pandas as pd
-from pkg_resources import resource_listdir
 
 csvfile = open("database_moto_updated.csv") # or which the file is right?
 csv_data = pd.read_csv(csvfile,low_memory=False)
